@@ -97,23 +97,24 @@ const { title } = Astro.props;
   </head>
   <body
     class={cn([
-      "home bg-background page-template-default page page-id-14976 theme-zyth gdlr-core-body woocommerce-no-js zyth-body zyth-body-front zyth-full zyth-with-sticky-navigation zyth-blockquote-style-3 gdlr-core-link-to-lightbox",
+      "home bg-background page-template-default page page-id-14976 theme-zyth gdlr-core-body woocommerce-no-js zyth-body zyth-body-front zyth-full zyth-with-sticky-navigation zyth-blockquote-style-3 gdlr-core-link-to-lightbox flex flex-col justify-between",
     ])}
   >
     <Nav />
 
     <div
       class={cn([
-        "zyth-body-wrapper clearfix zyth-with-transparent-header zyth-with-frame",
+        "zyth-body-wrapper flex-1 clearfix zyth-with-transparent-header zyth-with-frame",
       ])}
     >
       <div class={cn(["zyth-page-wrapper"])} id="zyth-page-wrapper">
         <div class={cn(["gdlr-core-page-builder-body"])}>
           <slot />
-          <Footer />
         </div>
       </div>
     </div>
+
+    <Footer />
 
     <script
       type="text/javascript"
